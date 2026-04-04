@@ -78,6 +78,49 @@ button:active {
     font-weight: bold;
 }
 
+
+.alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+
+  /* efeito vidro */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.alert p {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.alert button {
+  margin-top: 45px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+}
+
+.alert button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+
+
 /* Responsividade para telas menores que 768px */
 @media (max-width: 767px) {
 
